@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640">
+  <title>Live view in XPan</title>
+  <desc>The GR IV's 3:2 live view with XPan selected: the whole frame stays visible, the area outside the
+    65:24 band is dimmed by half, a thin white line marks each crop edge, and the focus frame sits inside the band.</desc>
+  <!-- Same scene and colours as icon.svg. 3:2 frame, 960 x 640; XPan band 960 x 354.46, y 142.77-497.23. -->
+  <defs>
+    <clipPath id="frame"><rect width="960" height="640" rx="28"/></clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E4A6B"/>
+      <stop offset=".55" stop-color="#9C7A8C"/>
+      <stop offset="1" stop-color="#E98F5E"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4E6080"/>
+      <stop offset="1" stop-color="#2A3D58"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="960" height="352" fill="url(#sky)"/>
+    <circle cx="612" cy="311" r="40" fill="#FFEBC2"/>
+    <rect y="352" width="960" height="288" fill="url(#sea)"/>
+    <path d="M0 353V292C58 284 112 266 164 274C214 282 252 316 300 336C324 345 344 350 372 353Z" fill="#33405C"/>
+    <path d="M748 353C782 340 826 334 868 342C886 346 898 350 906 353Z" fill="#46506E"/>
+    <g fill="#FFD7A1">
+      <rect x="560" y="360" width="104" height="6" rx="3"/>
+      <rect x="570" y="376" width="84" height="6" rx="3"/>
+      <rect x="579" y="393" width="66" height="6" rx="3"/>
+      <rect x="586" y="412" width="52" height="6" rx="3"/>
+      <rect x="592" y="433" width="40" height="6" rx="3"/>
+      <rect x="597" y="457" width="30" height="6" rx="3"/>
+      <rect x="601" y="484" width="22" height="6" rx="3"/>
+      <rect x="604.5" y="514" width="15" height="6" rx="3"/>
+      <rect x="607" y="547" width="10" height="6" rx="3"/>
+      <rect x="609" y="583" width="6" height="6" rx="3"/>
+    </g>
+    <g fill="#000" fill-opacity=".5">
+      <rect width="960" height="142.77"/>
+      <rect y="497.23" width="960" height="142.77"/>
+    </g>
+    <g fill="#FFF">
+      <rect y="141.27" width="960" height="3"/>
+      <rect y="495.73" width="960" height="3"/>
+    </g>
+    <path d="M160 260h-18v18M222 260h18v18M160 344h-18v-18M222 344h18v-18" fill="none" stroke="#FFF"
+          stroke-width="3" stroke-linecap="square"/>
+  </g>
+</svg>

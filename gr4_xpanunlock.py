@@ -35,8 +35,6 @@ OTHER_KNOWN = {
 }
 
 # (payload offset, original bytes, new bytes, what it does)
-# All changes keep every size and address unchanged. New routines are written in place over code the camera
-# never runs, and they only read from the firmware, never write to it.
 CHANGES = [
     (0x01a6e18, 'eaffff0a', 'e0011d0a',
      'live view: whole frame with the crop dimmed'),
@@ -454,7 +452,7 @@ CHANGES = [
      'XPan picture: image sizes, RAW crop, previews'),
 ]
 
-# The XPan icon (ICONBIN section, 60x40 RGBA), written into space freed by a duplicate icon.
+# The XPan icon.
 ICON_OFFSET = 0x3b73cc0
 ICON_BYTES = 9600
 ICON_OLD_SHA256 = '3839b322c6898ec64a94b3929f38a2d0cf10034a6d1118efefb0c83b54b23808'
